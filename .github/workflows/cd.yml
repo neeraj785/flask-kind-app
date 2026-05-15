@@ -28,7 +28,7 @@ jobs:
 
       - name: Build Docker image
         # DO NOT use sudo here. Execute as the default runner user.
-        run: docker build -t github-devops-app:latest -f flask-kind-app/Dockerfile flask-kind-app
+        run: docker build -t github-devops-app:latest .
 
       - name: Load Docker image into Kind
         # Run completely without sudo.
