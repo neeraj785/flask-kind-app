@@ -22,7 +22,7 @@ jobs:
         run: docker build -t github-devops-app:latest .
 
       - name: Install kubectl
-        uses: actions/setup-kubectl@v3
+        uses: azure/setup-kubectl@v3
         with:
           version: v1.28.1
 
