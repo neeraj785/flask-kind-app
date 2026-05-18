@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Docker image
         # Fixed path to point to your new folder structure
-        run: docker build -t github-devops-app:latest ./devops-github-app
+        run: docker build -t github-devops-app:latest .
 
       - name: Load Docker image into Kind
         run: kind load docker-image github-devops-app:latest --name devops-cluster
